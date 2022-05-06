@@ -1,0 +1,14 @@
+service:
+  port: 80
+
+datetime:
+  format: 2006-01-02 15:04:05
+
+auth:
+  secretkey: secret
+  
+db:
+  postgres:
+    timeout: 30
+    connection:
+      string: postgres://postgres:password@db:5432/postgres?pool_max_conns=20
